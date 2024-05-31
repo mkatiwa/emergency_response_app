@@ -62,7 +62,15 @@ class HomeScreen extends StatelessWidget {
           BottomNavigationBarItem(icon: Icon(Icons.location_on), label: 'Location'),
         ],
 
+class EmergencyServicesScreen extends StatelessWidget {
+  const EmergencyServicesScreen({Key? key}) : super(key: key);
 
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Emergency Services'),
+      ),
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
