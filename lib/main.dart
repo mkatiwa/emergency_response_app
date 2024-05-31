@@ -71,6 +71,19 @@ class EmergencyServicesScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Emergency Services'),
       ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Expanded(
+            child: Container(
+              color: Colors.red,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.local_hospital, size: 50),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Image.asset('assets/hospital.png'),
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
